@@ -4,8 +4,8 @@ namespace C__Intermediate_Exercises.Exercises
 {
     internal class StopWatch
     {
-        private DateTime StartTime { get; set; }
-        private DateTime StopTime { get; set; }
+        public DateTime StartTime { get; private set; }
+        public DateTime StopTime { get; private set; }
         private bool _isRunning = false;
 
         public void Start()
